@@ -35,13 +35,13 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import com.codetask.mainapp.ui.theme.MainAppTheme
 import com.find.myip.R
 import com.find.myipapp.api_content.RetrofitClient
 import com.find.myipapp.model.MyIpResponse
 import com.find.myipapp.repo.DataSource
 import com.find.myipapp.repo.MyRepository
 import com.find.myipapp.repo.Resource
-import com.find.myipapp.theme.FindMyIPTheme
 import com.find.myipapp.viewmodel.MyIpViewModel
 import kotlinx.coroutines.launch
 
@@ -54,7 +54,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            FindMyIPTheme {
+            MainAppTheme {
                 FindMyIpScreen(myIPViewModel)
             }
         }
