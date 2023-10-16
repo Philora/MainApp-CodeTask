@@ -12,12 +12,7 @@ class MainLibActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             MainAppTheme {
-                startActivity(
-                    Intent(
-                        this,
-                        MainActivity::class.java
-                    )
-                )
+                startActivity(Intent(this, MainActivity::class.java))
             }
         }
     }

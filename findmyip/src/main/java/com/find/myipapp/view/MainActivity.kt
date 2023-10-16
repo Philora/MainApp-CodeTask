@@ -35,13 +35,13 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.codetask.mainapp.ui.theme.MainAppTheme
 import com.find.myip.R
 import com.find.myipapp.api_content.RetrofitClient
 import com.find.myipapp.model.MyIpResponse
 import com.find.myipapp.repo.DataSource
 import com.find.myipapp.repo.MyRepository
 import com.find.myipapp.repo.Resource
+import com.find.myipapp.ui.theme.MainAppTheme
 import com.find.myipapp.viewmodel.MyIpViewModel
 import kotlinx.coroutines.launch
 
@@ -147,12 +147,7 @@ fun FetchMyIp(
             modifier = Modifier
                 .fillMaxWidth()
                 .height(300.dp),
-            shape = RoundedCornerShape(
-                topStart = 15.dp,
-                topEnd = 15.dp,
-                bottomStart = 15.dp,
-                bottomEnd = 15.dp,
-            ),
+            shape = RoundedCornerShape(15.dp),
         ) {
             Column(
                 modifier = Modifier
@@ -198,12 +193,7 @@ fun ResourceEmpty(modifier: Modifier = Modifier, fetchApiCall: () -> Unit) {
             Text(
                 text = stringResource(id = R.string.btn_find_my_ip_label),
                 fontSize = 20.sp,
-                modifier = Modifier.padding(
-                    start = 15.dp,
-                    end = 15.dp,
-                    top = 15.dp,
-                    bottom = 15.dp,
-                ),
+                modifier = Modifier.padding(15.dp),
             )
         }
     }
