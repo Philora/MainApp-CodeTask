@@ -30,6 +30,22 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures {
+        compose = true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.4.3"
+    }
+    packagingOptions {
+        resources {
+            excludes += "META-INF/"
+            excludes += "okhttp3/"
+            excludes += "kotlin/"
+            excludes += "org/"
+            excludes += ".properties"
+            excludes += ".bin"
+        }
+    }
 }
 
 dependencies {

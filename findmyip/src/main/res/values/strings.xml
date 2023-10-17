@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="loading">Loading...</string>
-    <string name="my_ip_label">My IP\n</string>
-    <string name="btn_find_my_ip_label">FIND MY IP</string>
+    <string name="app_name">FindMyIP</string>
+    <string name="btn_find_my_ip_label">Find My IP</string>
+    <string name="ip_add">My IP Address is</string>
+    <string name="loading">Loading</string>
 </resources>

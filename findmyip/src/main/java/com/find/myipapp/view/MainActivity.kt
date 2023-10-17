@@ -156,19 +156,8 @@ fun FetchMyIp(
                 horizontalAlignment = Alignment.CenterHorizontally,
                 verticalArrangement = Arrangement.Center,
             ) {
-
                 Text(
-                    text = "IP Address: $ip",
-                    fontSize = 23.sp,
-                    fontWeight = FontWeight.Bold,
-                    style = MaterialTheme.typography.headlineLarge,
-                    color = Color.Black,
-                )
-
-                Spacer(Modifier.height(25.dp))
-
-                Text(
-                    text = "City : $city",
+                    text = "IP Address: $ip\nCity : $city",
                     fontSize = 23.sp,
                     fontWeight = FontWeight.Bold,
                     style = MaterialTheme.typography.headlineLarge,
